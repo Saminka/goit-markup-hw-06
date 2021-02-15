@@ -565,6 +565,16 @@ h2 {
 .btn-close {
   position: absolute;
 }
+
+.hero .btn-close:hover,
+.hero .btn-close:focus {
+  background-color: #ffffff;
+  fill: var(--font-second-color);
+}
+
+.icon-checkbox:focus {
+  outline: 1px solid var(--font-second-color);
+}
 /* ===== /Герой ===== */
 
 /* ===== Преимущества ===== */
