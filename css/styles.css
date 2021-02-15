@@ -137,6 +137,11 @@ form .modal-open-btn {
   border: 1px solid black;
 }
 
+.checkbox:focus + .icon-checkbox {
+  background-color: #ffffff;
+  border-color: var(--font-second-color);
+}
+
 .checkbox:checked + .icon-checkbox {
   border-color: var(--font-second-color);
   /* background-color: var(--font-second-color); */
@@ -572,9 +577,9 @@ h2 {
   fill: var(--font-second-color);
 }
 
-.icon-checkbox:focus {
+/* .icon-checkbox:focus {
   outline: 1px solid var(--font-second-color);
-}
+} */
 /* ===== /Герой ===== */
 
 /* ===== Преимущества ===== */
