@@ -80,53 +80,61 @@
             </button>
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
-                <form class="form-modal-btn">
 
-                  <div class="form-action">
-                    <h3 class="modal-form">Оставьте свои данные, мы вам перезвоним</h3>
-
-                    <div class="form-action">
-                    <label for="name">Имя</label>
-                    <span class="personal">
-                    <svg  width="18px" height="18px" class="icon-person">
-                      <use href="./Images/symbol-defs.svg#icon-person-black"></use>
-                    </svg>
-                    </span>
-                      <input type="text" name="name" id="name" >
-                     
-</div>
-                <div class="form-action">
-                      <label for="">Телефон</label>
-                      <input type="tel" name="" id="tel">
-                </div>
-
-                <div class="form-action">
-                      <label for="">Почта</label>
-                      <input type="email" name="email" id="email">
-                  </div>
-
-
-                  <div class="form-action comment-div">
-                    <label for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" cols="53" rows="10" placeholder="Введите текст" class="textarea-style"></textarea>
-                  </div>
-
-                      <div class="div-policy form-action">
-                        <input type="checkbox" name="policy" id="policy">
-                        <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
-                        </div>
-
-                  </div>
-
-                  <button type="submit" class="modal-open-btn">Отправить</button>
-                </form>
+                <button class="btn-close" data-modal-close>
+                  <svg width="11px" height="11px">
+                    <use href="./Images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
                 
-              <button class="btn-close" data-modal-close>
-                <svg width="11px" height="11px">
-                  <use href="./Images/symbol-defs.svg#icon-close"></use>
-                </svg>
-              </button>
-                </div>
+              <h3 class="modal-form">Оставьте свои данные, мы вам перезвоним</h3>
+                <form class="modal-form">
+
+                 
+<label class="modal-form-label-name">Имя
+  <span class="input-wrapper">
+    <svg id="icon-person-black"  width="18px" height="18px" viewBox="0 0 32 32">
+      <use href="./Images/symbol-defs.svg#icon-person-black"></use>
+    </svg>
+    <input type="text" name="name" id="name" class="modal-form-input">
+    </span>
+</label>
+
+<label>Телефон
+  <span class="input-wrapper">
+    <svg id="icon-phone-black" width="18px" height="18px" viewBox="0 0 32 32">
+      <use href="./Images/symbol-defs.svg#icon-phone-black"></use>
+    </svg>
+  <input type="tel" name="" id="tel" class="modal-form-input">
+  </span>
+</label>
+<label for="">Почта
+  <span class="input-wrapper">
+    <svg id="icon-email-black" width="18px" height="18px" viewBox="0 0 32 32">
+      <use href="./Images/symbol-defs.svg#icon-email-black"></use>
+    </svg>
+<input type="email" name="email" id="email" class="modal-form-input">
+</span>
+</label>
+
+
+<label for="comment">Комментарий
+<textarea name="comment" id="comment" cols="50" rows="10" placeholder="Введите текст" class="modal-form-textarea"></textarea>
+</label>
+
+
+<label for="policy" class="label-chekbox">
+<input type="checkbox" name="policy" id="policy" value="accept" class="modal-form-input">
+<span class="policy-style"> Соглашаюсь с рассылкой и принимаю  <a href="#">Условия договора</a>
+</span>
+</label>
+
+<button type="submit" class="modal-open-btn">Отправить</button>
+                </form>
+               
+ 
+
+                  </div>
             </div>
           </div>
         </div>
@@ -526,7 +534,7 @@
           <h2 class="footer-action-heading">подпишитесь на рассылку</h2>
           <label for=""></label>
           <input type="email" name="mail" id="mail" placeholder="E-mail" class="input-btn-footer">
-          <button class="modal-open-btn footer-action-send">Подписаться
+          <button class="modal-open-btn footer-action-send"> Подписаться
 
 
           </button>
