@@ -149,6 +149,19 @@ nav .link {
   border-radius: 4px;
 }
 
+.icon-person {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 52px;
+  transform: translateY(-50%);
+  background-color: turquoise;
+}
+
+.personal {
+  position: relative;
+}
+
 .comment-div {
   /* margin-top: 10px; */
 
