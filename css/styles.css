@@ -126,8 +126,24 @@ form .modal-open-btn {
 }
 
 .label-chekbox {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  /* align-items: center; */
+}
+
+.icon-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid black;
+}
+
+.checkbox:checked + .icon-checkbox {
+  border-color: var(--font-second-color);
+  /* background-color: var(--font-second-color); */
+  background-color: var(--font-second-color);
+  background-image: url("/Images/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .form-modal-btn {
@@ -155,6 +171,17 @@ form .modal-open-btn {
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
   border-radius: 4px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .modal-form label {
@@ -522,17 +549,22 @@ h2 {
 }
 
 .btn-close {
+  display: flex;
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  padding: 6px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
+.btn-close {
+  position: absolute;
+}
 /* ===== /Герой ===== */
 
 /* ===== Преимущества ===== */
