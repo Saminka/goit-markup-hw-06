@@ -45,7 +45,7 @@ header {
   top: 0;
   left: 0;
   background-color: #ffffff;
-  /* z-index: 1; */
+  z-index: 2;
 }
 
 header .link-padding {
@@ -115,6 +115,11 @@ nav .link {
   margin-top: 30px;
 }
 
+.hero h3 {
+  margin: 0;
+  padding-bottom: 12px;
+}
+
 /* .form-action {
   height: 40px;
 } */
@@ -127,6 +132,7 @@ form .modal-open-btn {
 
 .label-chekbox {
   display: inline-block;
+
   /* align-items: center; */
 }
 
@@ -138,8 +144,9 @@ form .modal-open-btn {
 }
 
 .checkbox:focus + .icon-checkbox {
-  background-color: #ffffff;
-  border-color: var(--font-second-color);
+  background-color: var(--font-second-color);
+  border: none;
+  background-origin: border-box;
 }
 
 .checkbox:checked + .icon-checkbox {
@@ -840,6 +847,7 @@ button {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  z-index: -3;
 }
 
 .flex-container a:hover {
@@ -1157,12 +1165,15 @@ button {
 }
 
 .footer-box-link {
-  margin-right: 93px;
+  margin-right: 99px;
 }
 
 .footer-box-action {
   display: block;
   align-items: baseline;
+
+  /* min-width: 570px;
+  min-height: 86px; */
 }
 
 /* .modal-open-btn {
@@ -1188,14 +1199,15 @@ button {
 }
 
 .input-btn-footer {
-  width: 358px;
-  height: 50px;
+  min-width: 358px;
+  min-height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   padding-left: 16px;
   margin-top: 20px;
   border-radius: 4px;
+  color: #ffffff;
 }
 
 .footer-action-send {
