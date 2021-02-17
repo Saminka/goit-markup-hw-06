@@ -137,10 +137,12 @@ form .modal-open-btn {
 }
 
 .icon-checkbox {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 1px solid black;
+  /* display: inline-block; */
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border: 2px solid black;
+  border-radius: 4px;
 }
 
 .checkbox:focus + .icon-checkbox {
@@ -279,7 +281,7 @@ textarea::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71;
+  margin-left: 2em;
 
   letter-spacing: 0.03em;
 }
